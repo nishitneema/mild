@@ -300,7 +300,7 @@ class AnnealRunner():
         score.eval()
         fids = {}
 
-        num_samples = 800
+        num_samples = 8000
         batch_size = 128
 
         if self.config.data.dataset == 'MNIST':
