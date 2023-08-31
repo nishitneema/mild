@@ -275,7 +275,7 @@ links = {
 def get_fid_stats_path(args, config, download=True):
     if config.data.dataset == 'CIFAR10':
         # update the path accordingly
-        path = '/home/nishit/ncsn_ICASP/fid_stats/cifar10_fid.npz'
+        path = 'fid_stats/cifar10_fid.npz'
         if not os.path.exists(path):
             if not download:
                 raise FileNotFoundError("no statistics file founded")
@@ -287,7 +287,7 @@ def get_fid_stats_path(args, config, download=True):
                 )
     elif config.data.dataset == 'CELEBA':
         # update the path accordingly 
-        path = '/home/nishit/ncsn_ICASSP/fid_stats/celeba_fid.npz'
+        path = 'fid_stats/celeba_fid.npz'
         if not os.path.exists(path):
             raise FileNotFoundError('no statistics file founded')
 
