@@ -1,7 +1,7 @@
 import subprocess
 # getting fids for celeba without mild, mild with momentum and mild with nesterov
-# T = [20, 30, 40, 50]
-T = [1]
+T = [20, 30, 40, 50]
+# T = [1]
 gammas = [0.05, 0.07]
 for t in T:
     for gamma in gammas:
